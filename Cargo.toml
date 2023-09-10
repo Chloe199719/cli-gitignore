@@ -2,6 +2,8 @@
 name = "chloe_ignore"
 author = "Chloe <chloevision97@gmail.com>"
 description = "A simple ignore file generator"
+license = "MIT"
+repository = "https://github.com/Chloe199719/cli-gitignore"
 version = "0.1.0"
 edition = "2021"
 
