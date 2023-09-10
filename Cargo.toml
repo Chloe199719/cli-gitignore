@@ -4,7 +4,7 @@ author = "Chloe <chloevision97@gmail.com>"
 description = "A simple ignore file generator"
 license = "MIT"
 repository = "https://github.com/Chloe199719/cli-gitignore"
-version = "0.1.3"
+version = "0.1.4"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html

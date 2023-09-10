@@ -7,6 +7,7 @@ enum Language {
     Typescript,
     Javascript,
     Rust,
+    Append,
 }
 
 fn main() {
@@ -42,6 +43,9 @@ ex -c .idea .vscode
                     "rust" => {
                         language = Some(Language::Rust);
                     }
+                    "append" => {
+                        language = Some(Language::Append);
+                    }
                     _ => {}
                 }
             }
@@ -76,6 +80,9 @@ ex -c .idea .vscode
                 }
                 "rust" => {
                     language = Some(Language::Rust);
+                }
+                "append" => {
+                    language = Some(Language::Append);
                 }
                 _ => {
                     println!("Invalid language");
@@ -134,6 +141,13 @@ ex -c .idea .vscode
                 file.write_all(custom.as_bytes()).expect("Unable to write data");
             }
         }
-        None => { println!("There was an error") }
+        Some(Language::Append) => {
+            for custom in custom.iter() {
+                file.write_all(custom.as_bytes()).expect("Unable to write data");
+            }
+        }
+        None => {
+            println!("No language specified");
+        }
     }
 }

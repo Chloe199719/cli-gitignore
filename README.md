@@ -18,7 +18,7 @@
 
 ## Version
 
-0.1.3
+0.1.4
 
 ## Usage
 
@@ -26,7 +26,7 @@ The tool provides several command-line options:
 
 - `--help, -h`: Show the help message.
 - `--version, -v`: Show the version.
-- `--language, -l`: Specify a Programming Language (typescript, javascript, rust).
+- `--language, -l`: Specify a Programming Language (typescript, javascript, rust ,append). (append is used to not use a language template and append custom commands only)
 - `--remove, -r`: Remove the current .gitignore file if it exists and generate a new one.
 - `--custom, -c`: Add custom entries to the .gitignore file. Example: `-c .idea .vscode`.
 
@@ -86,4 +86,10 @@ cli-gitignore -l rust
 
 ```bash
 cli-gitignore -l rust -c .idea .vscode
+```
+
+### Generate a .gitignore file in Append mode
+
+```bash
+cli-gitignore -l append -c .idea .vscode
 ```
