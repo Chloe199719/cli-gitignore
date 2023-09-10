@@ -1,0 +1,10 @@
+[package]
+name = "chloe_ignore"
+author = "Chloe <chloevision97@gmail.com>"
+description = "A simple ignore file generator"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
