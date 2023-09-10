@@ -19,7 +19,7 @@ fn main() {
                 println!(
                     r#"--help, -h: Show this help message
 --version, -v: Show the version
---language, -l: Specify a Programming Language
+--language, -l: Specify a Programming Language (typescript, javascript, rust)
 --remove, -r: Remove the current .gitignore file if it exists and generate a new one
 --custom, -c: Add custom entries to the .gitignore file
 ex -c .idea .vscode
