@@ -16,11 +16,19 @@ fn main() {
     for (i, arg) in args.iter().enumerate() {
         match arg.to_lowercase().as_str() {
             "-h" | "--help" => {
-                println!("Help");
+                println!(
+                    r#"--help, -h: Show this help message
+--version, -v: Show the version
+--language, -l: Specify a Programming Language
+--remove, -r: Remove the current .gitignore file if it exists and generate a new one
+--custom, -c: Add custom entries to the .gitignore file
+ex -c .idea .vscode
+                "#
+                );
                 return;
             }
             "-v" | "--version" => {
-                println!("Version");
+                println!("Version 0.1.0");
                 return;
             }
             "-l" | "--language" => {
